@@ -1,16 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
+
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 
-namespace web_app.Data
+namespace Bizpack.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class AppDbContext : IdentityDbContext<AppUser>
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        public AppDbContext(DbContextOptions<AppDbContext> options)
             : base(options)
-        {
-        }
+        { }
     }
 }
