@@ -1,6 +1,6 @@
 using System;
 
-namespace web_app.Models
+namespace Bizpack.Models
 {
     public class ErrorViewModel
     {
